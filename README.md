@@ -1,14 +1,14 @@
-# Nexus PROMETHEE — Fluxos de Preferências Não-Compensatórios
+# SAD PROMETHEE — Fluxos de Preferências Não-Compensatórios
 
-Este repositório é o módulo independente do ecossistema **NEXUS MCDM**, configurado para operar exclusivamente com a família de métodos **PROMETHEE**.
+Este repositório é o módulo independente do ecossistema **SAD MCDM**, configurado para operar exclusivamente com a família de métodos **PROMETHEE**.
 
 ---
 
 ## 🎨 Identidade Visual e Branding
-- **Nome Oficial:** Nexus PROMETHEE
+- **Nome Oficial:** SAD PROMETHEE
 - **Cores Oficiais:** Ciano (`#06B6D4`) e Roxo Profundo (`#6D28D9`)
 - **Conceito Visual:** Setas direcionais de fluxos líquidos de atratividade e fraqueza.
-- **Copyright:** Direitos Reservados © 2026 NEXUS-MCDM. Todos os direitos reservados.
+- **Copyright:** Direitos Reservados © 2026 SAD-MCDM. Todos os direitos reservados.
 
 ---
 
@@ -17,7 +17,7 @@ Este repositório é o módulo independente do ecossistema **NEXUS MCDM**, confi
 O método **PROMETHEE** estabelece uma relação de sobreclassificação valorizada comparando as alternativas de forma através de preferências unilaterais. Ele avalia o quanto uma alternativa supera as outras (Fluxo de Saída) e o quanto ela é superada (Fluxo de Entrada).
 
 ### 1. Funções de Preferência ($P_j(a, b)$)
-Mapeiam a diferença de desempenho físico $d = g_j(a) - g_j(b)$ em uma escala de preferência de 0 a 1. Os tipos implementados no resolvedor Nexus são:
+Mapeiam a diferença de desempenho físico $d = g_j(a) - g_j(b)$ em uma escala de preferência de 0 a 1. Os tipos implementados no resolvedor SAD são:
 * **Tipo I (Usual):**
   $$P_j(d) = \begin{cases} 0 & \text{se } d \le 0 \\ 1 & \text{se } d > 0 \end{cases}$$
 * **Tipo II (U-Shape):**
@@ -55,7 +55,7 @@ Onde:
 * $x_i = 1$ indica que a alternativa $i$ é selecionada para o portfólio.
 * $c_i$ é o custo de capital da alternativa $i$.
 
-O resolvedor Nexus executa o Knapsack Problem (Problema da Mochila 0-1) usando Programação Linear Inteira para fornecer o portfólio de investimento ótimo.
+O resolvedor SAD executa o Knapsack Problem (Problema da Mochila 0-1) usando Programação Linear Inteira para fornecer o portfólio de investimento ótimo.
 
 ---
 
